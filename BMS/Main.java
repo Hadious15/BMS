@@ -58,7 +58,7 @@ public static void main(String[] args) throws IOException, ClassNotFoundExceptio
                                 System.out.println(ANSI_YELLOW + "-----------------------------------------"  + ANSI_RESET);
                                 System.out.println(ANSI_YELLOW + "HIVE:"  + ANSI_RESET);
                                 System.out.println(ANSI_YELLOW + "--------"  + ANSI_RESET);
-                                System.out.println(ANSI_CYAN + "Hive Size:" + ANSI_RESET);
+                                System.out.println(ANSI_CYAN + "Hive Size in Cubic Cm:" + ANSI_RESET);
                                 int HiveSize= console.nextInt();
                                 System.out.println(ANSI_CYAN + "Hive Serial Number:"  + ANSI_RESET);
                                 int HiveSerialNb=console.nextInt();
@@ -86,7 +86,7 @@ public static void main(String[] args) throws IOException, ClassNotFoundExceptio
                                 System.out.println(ANSI_YELLOW + "-----------------------------------------"  + ANSI_RESET);
                                 System.out.println(ANSI_YELLOW + "BEES:"  + ANSI_RESET);
                                 System.out.println(ANSI_YELLOW + "--------"  + ANSI_RESET);
-                                System.out.println(ANSI_CYAN + "Type Of Bee:"  + ANSI_RESET);
+                                System.out.println(ANSI_CYAN + "Type 'Species' Of Bee:"  + ANSI_RESET);
                                 String BeeType=console.next();
                                 System.out.println(ANSI_CYAN + "Estimated Number Of Bees:"  + ANSI_RESET);
                                 int EstimatesNbOfBees=console.nextInt();
@@ -103,7 +103,7 @@ public static void main(String[] args) throws IOException, ClassNotFoundExceptio
                                 int QueenBeeEggLayingRate=console.nextInt();
                                 System.out.println(ANSI_CYAN + "Life Span:(years)"  + ANSI_RESET);
                                 int QueenBeeLifeSpan=console.nextInt();
-                                System.out.println(ANSI_CYAN + "Medical Health:"  + ANSI_RESET);
+                                System.out.println(ANSI_CYAN + "Medical Health 'Description' :"  + ANSI_RESET);
                                 String QueenBeeMedicalHealth=console.next();
                                 GeneralBees newQueenBee = new QueenBee(QueenBeeType, QueenBeeEggLayingRate, QueenBeeLifeSpan, QueenBeeMedicalHealth);
                                 newHive.addBee(newBee);
@@ -145,7 +145,7 @@ public static void main(String[] args) throws IOException, ClassNotFoundExceptio
                                                 Hive EditHive=newApiary.FindHiveBYSerialNBfromApiary(EditHiveSerialNb);
                                                 System.out.println(ANSI_YELLOW + "HIVE:" + ANSI_GREEN + " " + EditHive.getHiveSerialNb() + " " + ANSI_RESET );
                                                 System.out.println(ANSI_YELLOW + "--------" + ANSI_RESET);
-                                                System.out.println(ANSI_CYAN + "Hive Size:" + ANSI_RESET);
+                                                System.out.println(ANSI_CYAN + "Hive Size in Cubic Cm:" + ANSI_RESET);
                                                 HiveSize= console.nextInt();
                                                 System.out.println(ANSI_CYAN + "Hive Serial Number:" + ANSI_RESET);
                                                 HiveSerialNb=console.nextInt();
@@ -190,7 +190,7 @@ public static void main(String[] args) throws IOException, ClassNotFoundExceptio
                                                 QueenBeeEggLayingRate=console.nextInt();
                                                 System.out.println(ANSI_CYAN + "Life Span:(years)" + ANSI_RESET);
                                                 QueenBeeLifeSpan=console.nextInt();
-                                                System.out.println(ANSI_CYAN + "Medical Health" + ANSI_RESET);
+                                                System.out.println(ANSI_CYAN + "Medical Health 'Description'" + ANSI_RESET);
                                                 QueenBeeMedicalHealth=console.next();
                                                 newQueenBee = new QueenBee(QueenBeeType, QueenBeeEggLayingRate, QueenBeeLifeSpan, QueenBeeMedicalHealth);
                                                 EditHive.ChangeQueenBee(newQueenBee);
