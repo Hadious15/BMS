@@ -46,7 +46,7 @@ public class BeeKeeper implements Serializable {
 	}
 	ArrayList<Apiary> apiary = new ArrayList<Apiary>();
 	ArrayList<Stock> stock = new ArrayList<Stock>();
-	HashMap<Date,Sales> sales = new HashMap();
+	HashMap<Date,Sales> sales = new HashMap<>();
 	Customers s;
     //Customers
 	 public void addCustomersToBeekeeperUserNoPrint(Customers c){
@@ -115,6 +115,20 @@ public class BeeKeeper implements Serializable {
 			System.out.println(ANSI_YELLOW + "-----------------------------------------" + ANSI_RESET);
 		}
 	}
+	public Apiary FindApiaryBYSerialNBfromHive(int l) {
+		for (int i = 0; i < apiary.size();i++) 
+		   { 		  
+			if(!apiary.get(i).isEmpty()){
+				if(apiary.get(i).FindHiveBYSerialNBfromApiary(l)!=null){
+					if(  apiary.get(i).FindHiveBYSerialNBfromApiary(l).getHiveSerialNb() == l ) {
+						return apiary.get(i); 
+					}
+				}
+			}    
+		  
+		   }
+		return null;
+	  }
 	public static final String ANSI_RESET = "\u001B[0m";
 	public static final String ANSI_BLACK = "\u001B[30m";
 	public static final String ANSI_RED = "\u001B[31m";
