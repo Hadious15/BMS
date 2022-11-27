@@ -54,7 +54,7 @@ public class Stock implements Serializable{
 		DrugsUsed = drugsInStock;
 	}
 	public void HoneyInStock() {		
-		 System.out.println(ANSI_GREEN + getJarsFilledWithHoney()*0.25 + " L" + ANSI_CYAN + "Honey In Stock" + ANSI_RESET);
+		 System.out.println(ANSI_GREEN + getJarsFilledWithHoney()*0.25 + "L" + ANSI_CYAN + "Honey In Stock" + ANSI_RESET);
 	}
 	public int NbOfEmptyJars() {
 		return getTotalNbOfJars()-getJarsFilledWithHoney();

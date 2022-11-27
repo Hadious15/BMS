@@ -99,7 +99,7 @@ public class Sales implements Serializable{
 	}
 
 	public double TotalCost() {
-		double sum = 150*getHivesBought()+ 1*getJarsBought()+75*getFoodBought()+25*getDrugsBought()+getOperatingExpenses()+getOther();
+		double sum = 150*getHivesBought()+ 1*getJarsBought()+25*getFoodBought()+25*getDrugsBought()+getOperatingExpenses()+getOther();
 		return sum;	
 	}
 
