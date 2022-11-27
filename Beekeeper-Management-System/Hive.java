@@ -102,7 +102,7 @@ public class Hive implements Serializable{
     		sum+=Current.EstimatesNbOfBees;
     		Current=Current.next;
     	}
-    	Percent=((sum*0.23)/Size)*100;
+    	Percent=((sum*1.0)/Size)*100;
     	return Percent;	
     }
     public double HiveEfficiency() {

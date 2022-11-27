@@ -129,8 +129,8 @@ public static void main(String[] args) throws IOException, ClassNotFoundExceptio
                                 System.out.println(ANSI_CYAN + "Medical Health 'Description' "  + ANSI_RESET);
                                 String QueenBeeMedicalHealth=console.next();
                                 GeneralBees newQueenBee = new QueenBee(QueenBeeType, QueenBeeEggLayingRate, QueenBeeLifeSpan, QueenBeeMedicalHealth);
-                                newHive.addBee(newBee);
                                 newHive.addQueenBee(newQueenBee);
+                                newHive.addBee(newBee);
                                 newApiary.addHiveToApiary(newHive);
                                 SignedIn.getBeeKeeper().addApiaryToBeekeeperUser(newApiary);
                                 break;
